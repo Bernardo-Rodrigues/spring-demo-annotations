@@ -10,6 +10,9 @@ public class TennisCoach implements Coach {
     @Qualifier("randomFortuneService")
     private FortuneService fortuneService;
 
+    public TennisCoach(FortuneService fortuneService) {
+        this.fortuneService = fortuneService;
+    }
 
     public TennisCoach() { }
 
